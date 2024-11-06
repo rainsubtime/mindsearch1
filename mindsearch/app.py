@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from lagent.schema import AgentStatusCode
 from pydantic import BaseModel
 from sse_starlette.sse import EventSourceResponse
-
+import os
 from mindsearch.agent import init_agent
 
 

@@ -62,6 +62,8 @@ qwen = dict(type=GPTAPI,
             repetition_penalty=1.02,
             stop_words=['<|im_end|>'])
 
+internlm2_5 = dict()
+
 internlm_silicon = dict(type=GPTAPI,
                         model_type=os.environ.get('SILICON_MODEL', 'internlm/internlm2_5-7b-chat'),
                         key=os.environ.get('SILICON_API_KEY', 'YOUR SILICON API KEY'),
